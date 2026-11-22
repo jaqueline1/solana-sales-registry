@@ -81,8 +81,6 @@ El código contiene restricciones relacionadas con:
 - Validación de montos mayores que cero.
 - Condiciones para modificar o eliminar registros.
 
-**Aporte funcional en revisión:** validaciones de datos comerciales en el programa Rust. La comprobación del rechazo de importes no positivos y la identificación de una mejora adicional respecto al proyecto guiado quedan pendientes de documentar.
-
 ## 7. Despliegue en Solana Devnet
 
 **Red:** Solana Devnet
