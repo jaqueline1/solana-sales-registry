@@ -114,7 +114,9 @@ https://github.com/jaqueline1/Registro-Ventas-Solana-App
 
 El frontend parte del proyecto educativo de WayLearn y fue configurado en GitHub Codespaces para utilizar el IDL y el Program ID del despliegue.
 
-La integración de todos los archivos modificados del frontend y del cliente generado en el repositorio de entrega continúa pendiente.
+Los archivos modificados del frontend, el IDL, la configuración del Program ID y el cliente TypeScript generado mediante Codama se encuentran publicados en el repositorio Registro-Ventas-Solana-App.
+
+El repositorio principal Solana Sales Registry contiene el programa Rust, el IDL y las evidencias del desarrollo. Ambos repositorios están vinculados mediante esta documentación para facilitar la revisión del proyecto.
 
 ## 9. Instalación y ejecución del frontend
 
@@ -165,23 +167,48 @@ Estas comprobaciones se realizaron durante el desarrollo del proyecto en Solana 
 
 ## 11. Evidencias del proyecto
 
-Las capturas de compilación, despliegue, generación del cliente y ejecución del frontend se conservaron durante el desarrollo y están pendientes de incorporarse a la carpeta `evidencias/` del repositorio.
+Las evidencias técnicas se encuentran publicadas en la carpeta `evidencias/` del repositorio principal.
 
-Las pruebas funcionales deberán incluir el estado inicial, la operación realizada, el resultado esperado, el resultado observado y, cuando corresponda, el enlace a la transacción de Solana Explorer.
+Se incluyen capturas de la compilación del programa, generación del cliente TypeScript, conexión de la wallet Solflare, consulta del registro y ejecución exitosa de la verificación automática mediante `npm run verificar`.
 
-No se reportan transacciones comerciales de prueba como exitosas mientras no hayan sido ejecutadas y verificadas.
+Estas evidencias documentan la configuración y el funcionamiento técnico inicial. Las transacciones de creación, ventas y devoluciones deberán documentarse por separado cuando se hayan ejecutado y verificado en Devnet.
 
-## 12. Estado del proyecto
+[Consultar carpeta de evidencias](./evidencias/)
 
-El prototipo cuenta con un programa compilado y desplegado en Devnet y un frontend que se ejecuta con la configuración del IDL correspondiente.
+## 12. Adaptación e integración del proyecto
 
-Las siguientes actividades están pendientes para completar la entrega:
+### 12.1. Descripción de la adaptación
 
-- Publicar los archivos actualizados del frontend y del cliente generado.
-- Integrar las evidencias al repositorio.
-- Comprobar las operaciones comerciales en Devnet.
-- Documentar el aporte funcional y su caso de prueba.
-- Verificar que el repositorio permita reproducir el proyecto.
+Solana Sales Registry parte del proyecto educativo Registro de Ventas de WayLearn, utilizado durante el Solana Engineering Track: Advanced.
+
+La adaptación realizada consistió en integrar un programa desarrollado y desplegado en Solana Devnet con una aplicación web basada en React y TypeScript.
+
+### 12.2. Actividades realizadas
+
+Durante el desarrollo se llevaron a cabo las siguientes actividades:
+
+1. Configuración y despliegue del programa Rust mediante Solana Playground.
+2. Exportación del IDL correspondiente al programa.
+3. Sustitución del Program ID del ejemplo por el identificador del despliegue propio.
+4. Generación y actualización del cliente TypeScript mediante Codama.
+5. Configuración del frontend para interactuar con Solana Devnet.
+6. Conexión de la wallet Solflare a la aplicación.
+7. Verificación de la coherencia entre el IDL, el Program ID y el cliente generado.
+8. Compilación del frontend mediante Vite.
+
+### 12.3. Resultados de la integración
+
+La aplicación permite conectar una wallet de Solana y realizar consultas de registros mediante la red Devnet.
+
+La ejecución del comando `npm run verificar` confirmó la coherencia de la configuración del programa y permitió generar correctamente la compilación del frontend.
+
+### 12.4. Mejora funcional propia
+
+La integración técnica y las adaptaciones realizadas se encuentran documentadas en los repositorios del proyecto.
+
+La identificación y demostración de una funcionalidad adicional propia, distinta de las proporcionadas por el proyecto guiado, continúa pendiente de verificación.
+
+Esta mejora deberá documentarse junto con su implementación y una prueba que demuestre el comportamiento esperado.
 
 ## 13. Referencias
 
